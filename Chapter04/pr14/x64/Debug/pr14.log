@@ -1,0 +1,5 @@
+﻿  GamblingGame.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
+C:\Users\Sonya\Desktop\CPP_ASSIGNMENT\Chapter04\pr14\GamblingGame.cpp(59): warning C4715: 'GamblingGame::run': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  pr14.vcxproj -> C:\Users\Sonya\Desktop\CPP_ASSIGNMENT\Chapter04\pr14\x64\Debug\pr14.exe
