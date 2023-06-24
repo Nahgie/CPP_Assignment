@@ -1,5 +1,4 @@
-﻿#include <iostream>
-#include "NamedCircle.h"
+﻿#include "NamedCircle.h"
 
 int main() {
 
