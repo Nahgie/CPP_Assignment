@@ -14,4 +14,5 @@ public:
 	int length() { return this->index; }
 	void push(int num);
 	int pop();
+
 };

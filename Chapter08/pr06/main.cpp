@@ -20,7 +20,6 @@ int main() {
 	while (mStack.length() != 0 ) {
 
 		std::cout << mStack.pop() << " ";
-
 	}
 
 	std::cout << std::endl << "스택의 현재 크기 : " << mStack.length() << std::endl;

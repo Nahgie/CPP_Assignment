@@ -17,4 +17,5 @@ protected :
 	void put(int index , int val) { this->mem[index] = val; }
 	int get(int index) { return this->mem[index]; }
 	int getCapacity() { return this->capacity; }
+
 };

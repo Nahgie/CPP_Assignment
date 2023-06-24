@@ -10,4 +10,5 @@ int main() {
 
 	for (int i = 0; i < 5; i++) { mainMemory.write(i,biosROM.read(i)); }
 	for (int i = 0; i < 5; i++) { std::cout << mainMemory.read(i); }
+
 }

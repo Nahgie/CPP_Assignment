@@ -14,4 +14,5 @@ public :
 	int length() { return this->index; }
 	void enqueue(int num);
 	int dequeue();
+
 };

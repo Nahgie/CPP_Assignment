@@ -6,6 +6,7 @@ void MyQueue::enqueue(int num) {
 
 	this->put(this->index, num);
 	this->index++;
+
 }
 
 int MyQueue::dequeue() {
@@ -14,4 +15,5 @@ int MyQueue::dequeue() {
 	static int read = 0;
 	
 	return this->get(read++);
+
 }

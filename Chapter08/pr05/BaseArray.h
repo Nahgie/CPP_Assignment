@@ -7,10 +7,7 @@ private :
 
 protected :
 	
-	BaseArray(int capacity = 100) { 
-		
-		this->capacity = capacity, this->mem = new int[capacity];
-	}
+	BaseArray(int capacity = 100) { this->capacity = capacity, this->mem = new int[capacity]; }
 
 	~BaseArray() { delete[] this->mem; }
 

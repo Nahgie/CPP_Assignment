@@ -4,9 +4,8 @@
 int main() {
 
 	MyQueue mQ(100);
-	
 	int n;
-	
+
 	std::cout << "큐에 삽입할 5개의 정수를 입력하라>> ";
 	
 	for (int i = 0; i < 5; i++) {

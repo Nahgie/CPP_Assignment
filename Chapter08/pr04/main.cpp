@@ -1,6 +1,7 @@
 ﻿#include "ColorPoint.h"
 
 int main() {
+
 	ColorPoint zeroPoint;
 	zeroPoint.show();
 
@@ -8,4 +9,5 @@ int main() {
 	cp.setPoint(10,20);
 	cp.setColor("BLUE");
 	cp.show();
+
 }
