@@ -13,44 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Printers">
-      <UniqueIdentifier>{5361621e-f450-4aa6-a252-e9067ae81df4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Printers">
-      <UniqueIdentifier>{60228e64-4757-4d46-b955-22de41e15d40}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Inkjet.cpp">
-      <Filter>소스 파일\Printers</Filter>
-    </ClCompile>
-    <ClCompile Include="Laser.cpp">
-      <Filter>소스 파일\Printers</Filter>
-    </ClCompile>
-    <ClCompile Include="Printer.cpp">
-      <Filter>소스 파일\Printers</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintManager.cpp">
+    <ClCompile Include="AirlineBook.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Laser.h">
-      <Filter>헤더 파일\Printers</Filter>
-    </ClInclude>
-    <ClInclude Include="Inkjet.h">
-      <Filter>헤더 파일\Printers</Filter>
-    </ClInclude>
-    <ClInclude Include="Printer.h">
-      <Filter>헤더 파일\Printers</Filter>
-    </ClInclude>
-    <ClInclude Include="PrintManager.h">
+    <ClInclude Include="AirlineBook.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Headers.h">
+    <ClInclude Include="Schedule.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Seat.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
