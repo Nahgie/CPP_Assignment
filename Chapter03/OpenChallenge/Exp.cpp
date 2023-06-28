@@ -1,4 +1,4 @@
-#include <typeinfo>
+﻿#include <typeinfo>
 #include "Exp.h"
 
 int Exp::getValue() {

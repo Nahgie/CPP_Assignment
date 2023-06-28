@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Exp.h"
 
 int main() {
@@ -8,7 +8,7 @@ int main() {
 	Exp c;
 
 	std::cout << a.getValue() << " " << b.getValue() << " " << c.getValue() << std::endl;
-	std::cout << "aÀÇ º£ÀÌ½º " << a.getBase() << "," << "Áö¼ö " << a.getExp() << std::endl;
+	std::cout << "aì˜ ë² ì´ìŠ¤ " << a.getBase() << "," << "ì§€ìˆ˜ " << a.getExp() << std::endl;
 
 	if (a.equals(b)) {
 		
