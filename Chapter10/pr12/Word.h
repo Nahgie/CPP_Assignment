@@ -1,16 +1,19 @@
 ﻿#pragma once
 #include <string>
-#include <vector>
 
 class Word {
 private :
 
-	std::vector<std::string> words_en = { "human" , "society" , "dall" , "emotion" , "painting" , "trade" };
-	std::vector<std::string> words_kr = { "인간" , "사회" , "인형" , "감정" , "그림" , "거래" };
+	std::string words_en , words_kr;
 
 public :
 
-	std::string getWordEN(int index) { return this->words_en.at(index); }
-	std::string getWordKR(int index) { return this->words_kr.at(index); }
-	int getSavedCount() { return this->words_en.size() - 1; }
+	Word(std::string EN, std::string KR) {
+
+		this->words_en = EN;
+		this->words_kr = KR;
+	}
+
+	std::string getWordEN() { return this->words_en; }
+	std::string getWordKR() { return this->words_kr; }
 };
