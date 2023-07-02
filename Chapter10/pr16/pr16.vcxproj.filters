@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Shapes">
+      <UniqueIdentifier>{8ec28018-51b5-4899-9f23-7e63ec5f8b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Management">
+      <UniqueIdentifier>{8e2571b9-9df6-4779-9814-855f70a14bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Management">
+      <UniqueIdentifier>{a08ceada-8a09-49c1-ac37-da1b5cb79cc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="GraphicEditor.cpp">
+      <Filter>소스 파일\Management</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rect.h">
+      <Filter>헤더 파일\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>헤더 파일\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>헤더 파일\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEditor.h">
+      <Filter>헤더 파일\Management</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>헤더 파일\Shapes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
