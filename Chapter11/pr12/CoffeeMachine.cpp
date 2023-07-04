@@ -33,50 +33,49 @@ void CoffeeMachine::brewCoffee(int CoffeeType) {
 
 	switch (CoffeeType) {
 
-	case 0: //보통커피
+		case 0: //보통커피
 
-		cbean->minusStock(1);
-		ccream->minusStock(1);
-		cwater->minusStock(1);
-		ccup->minusStock(1);
+			cbean->minusStock();
+			ccream->minusStock();
+			cwater->minusStock();
+			ccup->minusStock();
 
-		show();
-		break;
+			show();
+			break;
 
-	case 1: //설탕커피
+		case 1: //설탕커피
 
-		cbean->minusStock(1);
-		csugar->minusStock(1);
-		cwater->minusStock(1);
-		ccup->minusStock(1);
+			cbean->minusStock();
+			csugar->minusStock();
+			cwater->minusStock();
+			ccup->minusStock();
 
-		show();
-		break;
+			show();
+			break;
 
-	case 2: //블랙커피
+		case 2: //블랙커피
 
-		cbean->minusStock(1);
-		cwater->minusStock(1);
-		ccup->minusStock(1);
+			cbean->minusStock();
+			cwater->minusStock();
+			ccup->minusStock();
 
-		show();
-		break;
+			show();
+			break;
 
-	default :
+		default :
 
-		std::cout << "커피를 내릴수 없습니다." << std::endl;
-		break;
+			std::cout << "커피를 내릴수 없습니다." << std::endl;
+			break;
 	}
-
 }
 
 void CoffeeMachine::show() { //재료 현황
 
-	cbean->getStockHis(cbean->getStock());
-	csugar->getStockHis(csugar->getStock());
-	ccream->getStockHis(ccream->getStock());
-	cwater->getStockHis(cwater->getStock());
-	ccup->getStockHis(ccup->getStock());
+	cbean->getStockHis();
+	csugar->getStockHis();
+	ccream->getStockHis();
+	cwater->getStockHis();
+	ccup->getStockHis();
 }
 
 void CoffeeMachine::controlPanel() {
@@ -88,40 +87,40 @@ void CoffeeMachine::controlPanel() {
 
 	switch (userMode) {
 
-		case 0:
+		case 0: // 보통 커피
 		
 			std::cout << "맛있는 보통 커피 나왔습니다~~\n" << std::endl;
 		
 			brewCoffee(0);
 			break;
 
-		case 1:
+		case 1: // 설탕 커피
 
 			std::cout << "맛있는 설탕 커피 나왔습니다~~\n" << std::endl;
 
 			brewCoffee(1);
 			break;
 
-		case 2:
+		case 2: // 블랙 커피
 
 			std::cout << "맛있는 블랙 커피 나왔습니다~~\n" << std::endl;
 
 			brewCoffee(2);
 			break;
 
-		case 3:
+		case 3: //재료 채우기
 		
 			reFill();
 			break;
 
-		case 4:
+		case 4: //종료
 
 			std::cout << "판매를 종료합니다." << std::endl;
 
 			exit(1);
 			break;
 
-		default :
+		default : //예외처리
 
 			std::cout << "허용된 동작이 아닙니다." << std::endl;
 			break;
