@@ -32,4 +32,5 @@ int main() {
 		
 		else { std::cout << "; " << iniDatas.at(userMode - 1) << std::endl; }
 	}
+	wFile.close();
 }

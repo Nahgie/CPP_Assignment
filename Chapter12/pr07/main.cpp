@@ -25,4 +25,6 @@ int main() {
 		ch = wFile.get();
 		pFile.put(ch);
 	}
+	wFile.close();
+	pFile.close();
 }
