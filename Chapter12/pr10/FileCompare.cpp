@@ -24,6 +24,10 @@ bool FileCompare::compare() {
 		}
 	}
 	std::cout << "\n\n두 파일은 같은 파일입니다." << std::endl;
+
+	srcFile.close();
+	compareFile.close();
+
 	return false;
 }
 
@@ -31,7 +35,7 @@ void FileCompare::init() {
 
 	bool breakPoint = true;
 
-	while (breakPoint) {
+	while (breakPoint) { //프로젝트 폴더에 있는 webp 파일로 비교함
 	
 		std::cout << "소스 파일의 경로를 입력하세요.\nroot?> ";
 		std::cin >> this->srcDirectory;
